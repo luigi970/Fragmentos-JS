@@ -11,16 +11,20 @@ function addElement() {
 	input.value = '';
 }
 
-button.addEventListener("click", function(){
+function addClick(e) {
 	if(input.value.length > 0) {
 		console.log("Its click");
 		addElement();
 	}
-})
+}
 
-input.addEventListener("keydown", function() {
+function addKeyDown(e) {
 	if(input.value.length > 0 && event.keyCode === 13){
 		console.log("Its enter");
 		addElement();
 	}
-})
+}
+
+button.addEventListener("click", addClick(e));
+
+input.addEventListener("keydown", addKeyDown(e));
