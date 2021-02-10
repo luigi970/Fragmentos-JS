@@ -1,2 +1,2 @@
 # Fragmentos JS
- practicas de estudio js
+ Ejercicios js
